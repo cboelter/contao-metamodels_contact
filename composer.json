@@ -1,0 +1,46 @@
+{
+	"name": "cboelter/metamodels-contact",
+	"description": "MetaModels contact extension",
+	"keywords": ["contao", "metamodels", "contact"],
+	"type": "contao-module",
+	"homepage": "http://boelter.eu/",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Christopher Bölter",
+			"email": "github@boelter.eu",
+			"homepage": "http://boelter.eu",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "github@boelter.eu",
+		"issues": "https://github.com/cboelter/contao-metamodels_contact/issues",
+		"source": "https://github.com/cboelter/contao-metamodels_contact"
+	},
+	"require": {
+		"php": ">=5.3",
+		"contao/core": ">=3.2,<4.0",
+		"metamodels/core": "~2.0"
+	},
+	"conflict": {
+		"contao/core": "3.0.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"MetaModels": "src"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"contao": "system/modules/metamodels_contact"
+			}
+		},
+		"branch-alias": {
+			"dev-tng": "2.0.x-dev"
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}
